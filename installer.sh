@@ -51,15 +51,6 @@ sudo ln -s /opt/volatility/vol.py /usr/bin/volatility
 echo -e "${BIGreen}[*] Installing essential for Cryptography"
 pip install pycryptodome
 
-echo -e "${BIGreen}[*] Installing essesntial for Blockchain "
-cd 
-apt-get install -y nodejs npm
-npm install -y --save-dev hardhat
-pip install git+https://github.com/minaminao/erever.git #Erever EVM Reverse Tool
-mv .local/bin/erever ./Blockchain/tools
-curl -L https://foundry.paradigm.xyz | bash
-foundryup
-
 echo -e "${BIGreem}[*] Installing Docker and Docker-compose"
 apt install -y docker.io
 apt install -y docker-compose
